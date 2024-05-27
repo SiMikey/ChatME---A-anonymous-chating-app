@@ -24,3 +24,8 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=dibyajyotidhar&show_icons=true&locale=en" alt="dibyajyotidhar" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=dibyajyotidhar&" alt="dibyajyotidhar" /></p>
+<h3 align="left">ScreenShots of the App:</h3>
+<p><img align="center src="C:\Users\dibya\Downloads\chatme app.png" alt="My Image"></p>
+<p><img align="center src="C:\Users\dibya\Downloads\asdf.png" alt="My Image"></p>
+<p><img align="center src="C:\Users\dibya\Downloads\sdfgh.jpg" alt="My Image"></p>
+
