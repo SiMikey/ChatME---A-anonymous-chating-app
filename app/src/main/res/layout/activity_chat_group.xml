@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="vModel"
+            type="com.example.chatme.viewmodel.ViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Messages"
+            android:elevation="30dp"
+            android:id="@+id/head"
+            android:gravity="center"
+            android:background="#651FFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/layout_input"
+                android:layout_alignParentTop="true"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/layout_input"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+                
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="  Type Here"
+                    android:background="@drawable/edit_text_style"
+                    android:id="@+id/edit_chat_msg"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"/>
+                
+                <Button
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Send"
+                    android:id="@+id/sendBTN"
+                    android:backgroundTint="#651FFF"
+                    android:textStyle="bold"
+                    android:typeface="serif"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</layout>
